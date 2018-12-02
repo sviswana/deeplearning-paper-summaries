@@ -17,13 +17,14 @@ Minh-Thang Luong, Hieu Pham, Christopher Manning
 **My takeaway:** Attention based NMT is definitely superior to non-attention approach, and both global & local architectures produce SOTA results for NMT.
 
 ### Relevant Architecture
-- Uses stacking LSTM architecture, similar to Sutskever 2014 (my summary found here: )
+- Uses stacking LSTM architecture, similar to Sutskever 2014 (my summary found [here](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/SequenceToSequence.md))
 - **General approach:** at each step *t* of decoding phase, take hidden state of top layer of stacking LSTM (h<sub>t</sub>)--> context vector (c<sub>t</sub>) --> predict target word (y<sub>t</sub>).
   - Global Attention: Compute *variable-length* alignment vector comparing target hidden state with each source hidden state.  Computes a content-based score function (i.e. dot, general, concat).  This is used to define context vector as weighted average.
   - Local Attention: Small subset of source positions for each target word. *fixed-length* alignment & context vector is weighted average of hidden states. Window is typically 10.
 
-Global Attention [alt text](http://url/to/img.png)
-Local Attention [alt text](http://url/to/img.png)`
+Global Attention:  
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/attention-1.png" width="40%">
+Local Attention <img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/attention-2.png" width="40%">
 
 #### Certain training details
 - Various score functions experimented with for alignment vector. Paper finds general/dot product works better than generic location-based function.
