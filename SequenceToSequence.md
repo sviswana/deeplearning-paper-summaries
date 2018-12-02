@@ -12,7 +12,7 @@ Ilya Sutskever, Oriol Vinyals, Quoc V. Le
 - A large deep LSTM with limited vocabulary > standard SMT with unlimited vocabulary.
 - Simple, straight forward approach can outperform SMT.
 
-My takeaway: LSTMs can effectively be used for machine translation, and are particularly effective when source sentences are reversed.
+**My takeaway**: LSTMs can effectively be used for machine translation, and are particularly effective when source sentences are reversed.
 
 ### Relevant Architecture
 LSTM is used to map input sequence to fixed size vector. Then another LSTM is used to map the vector to output sequence.
