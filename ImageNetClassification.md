@@ -14,7 +14,7 @@ Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton
   3. Normalizing ReLUs (improves error rate by ~1.4%)
   4. Overlapping pooling
 
-**My takeaway:**: Deeper is better - Laid the groundwork for deeper NN architectures for better results + prevalence of ReLU for faster training purposes.
+**My takeaway:** Deeper is better - Laid the groundwork for deeper NN architectures for better results + prevalence of ReLU for faster training purposes.
 
 ### Relevant Architecture
 - 5 convolutional layers followed by 3 fully connected layers.
@@ -23,6 +23,8 @@ Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton
   - 3rd layer: ReLU
   - 4th layer: ReLU
   - 5th layer: ReLU + overlapping pooling
+
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/imagenet-1.png" width="70%">
 
 #### Certain training details
 - Network has 60 million parameters + 650K neurons
