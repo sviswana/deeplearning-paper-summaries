@@ -24,7 +24,9 @@ Minh-Thang Luong, Hieu Pham, Christopher Manning
 
 Global Attention:  
 <img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/attention-1.png" width="40%">
-Local Attention <img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/attention-2.png" width="40%">
+
+Local Attention:
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/attention-2.png" width="40%">
 
 #### Certain training details
 - Various score functions experimented with for alignment vector. Paper finds general/dot product works better than generic location-based function.
