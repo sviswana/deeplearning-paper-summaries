@@ -14,7 +14,7 @@ Alex Graves
 -- Novel convolutional technique for conditioning predictions based on annotations.
 -- "Priming"/biasing samples for better legibility.
 
-My takeaway: LSTM RNN's are surprisingly good at generating complex sentences that are human-readable (i.e. Wiki articles)
+**My takeaway**: LSTM RNN's are surprisingly good at generating complex sentences that are human-readable (i.e. Wiki articles)
 
 ### Relevant Architecture
 Basic prediction network architecture discussed in paper.
@@ -23,9 +23,9 @@ Basic prediction network architecture discussed in paper.
 - Stack multiple LSTM layers with skip connections
 - Clip gradients to a range to prevent exploding gradients.
 
-[alt text](http://url/to/img.png)
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/rnnSequences-1.png" width="50%">
 
 
 ### Future Work
 - Speech synthesis rather than just handwriting synthesis.
-- Better understanding of internal representation (b/c much of this is treated as black box)/
+- Better understanding of internal representation (b/c much of this is treated as black box)
