@@ -14,7 +14,7 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren
 **My takeaway:** Residual nets allow for deeper neural nets without the side-effect of degradation of training accuracy.
 
 ### Relevant Architecture
-See IMAGE below...
+![](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/resNet-1.png)
 - General idea is to compute a residual mapping (i.e. instead of solving for H(*x*), we solve for F(*x*) = H(*x*) - *x*, and then add *x* at the end.)
 - The paper hinges on comparing plain (traditional) networks to the new residual networks.
   - Plain networks are inspired by VGG net - have 34 parameters layers with 3x3 filters, global average pooling, and 1000-way FC layer connected softmax.
