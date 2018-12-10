@@ -17,12 +17,12 @@ Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio
 
 ### Relevant Architecture
 - Extension of RNN Encoder-Decoder with soft-alignment.
-<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/jointlyAlign-2.png" width="40%">
-*Decoder*: based on previous hidden state, previous target word, and context vector. Context vector in turn is computed as weighted sum of annotations, where the weights are computed based on alignment model (single-layer MLP)
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/jointlyAlign-2.png" width="30%">
+- Decoder: based on previous hidden state, previous target word, and context vector. Context vector in turn is computed as weighted sum of annotations, where the weights are computed based on alignment model (single-layer MLP)
 
-<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/jointlyAlign-1.png" width="40%">
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/jointlyAlign-1.png" width="50%">
 
-*Encoder*: Bi-directional RNN, where forward/backward hidden states are concatenated.
+- Encoder: Bi-directional RNN, where forward/backward hidden states are concatenated.
 - Uses the simplified LSTM based unit described in Cho's paper ([summary](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/LearningPhases-RNNEncoder-Decoder.md)).
 
 
