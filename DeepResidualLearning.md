@@ -14,7 +14,7 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren
 **My takeaway:** Residual nets allow for deeper neural nets without the side-effect of degradation of training accuracy.
 
 ### Relevant Architecture
-See IMAGE below...
+![](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/resNet-1.png)
 - General idea is to compute a residual mapping (i.e. instead of solving for H(*x*), we solve for F(*x*) = H(*x*) - *x*, and then add *x* at the end.)
 - The paper hinges on comparing plain (traditional) networks to the new residual networks.
   - Plain networks are inspired by VGG net - have 34 parameters layers with 3x3 filters, global average pooling, and 1000-way FC layer connected softmax.
@@ -23,7 +23,7 @@ See IMAGE below...
 - Note: the paper also explores much deeper architectures (100 - 1000 layers). These use the bottleneck architecture, where 3 layers are stacked together, rather than 2.
 
 #### Certain training details
-- Much of the training follows the landmark ImageNet paper (summarized HERE)
+- Much of the training follows the landmark ImageNet paper (summarized by me [**here**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/ImageNetClassification.md))
 - Batch normalization is used extensively.
 - No maxout OR dropout - in general, excessive regularization is avoided to focus on testing the network depth.
 - Batch size of 128, momentum of 0.9, trained on 1.28 million images.

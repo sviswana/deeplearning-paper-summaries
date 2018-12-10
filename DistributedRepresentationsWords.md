@@ -20,7 +20,8 @@ Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, Jeffrey Dean
 - Traditionally hierarchical softmax is used. This basically takes log(W) time, where W is # of words. Another alternative is NCE (noise contrastive estimation) which uses logistic regression to distinguish noise vs data.
 - Negative sampling is simplification of NCE b/c it uses only samples (and not probabilities of noise distribution).
 
-[alt text](http://url/to/img.png) [INCLUDE IMAGE}}}
+![](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/distributedRepr.png)
+
 ##### Subsampling
 - Frequent words (like "the", "a") are not useful, so they are subsampled aggressively.
 

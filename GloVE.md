@@ -10,11 +10,11 @@ Jeffrey Pennington, Richard Socher, Christopher Manning
 
 - Current Techniques & their problems:
  - LSA (latent semantic analysis) - problem is bad on analogies (poor vector space structure)
- - word2vec, skig-gram model - problem is it doesn't use global statistics.
+ - word2vec, skip-gram model - problem is it doesn't use global statistics.
 - Solution is a weighted least squares model that trains on global word-word co-occurrence counts.
 - The unsupervised learning algorithm produces results better than word2vec in most cases - but is also much faster, which is very important.
 
-My takeaway: The key insight appears to be that relationship of words can be examined by calculating the ratio of their co-occurrence probabilities, while at the same time working on analogies.
+**My takeaway**: The key insight appears to be that relationship of words can be examined by calculating the ratio of their co-occurrence probabilities, while at the same time working on analogies.
 
 ### Relevant Architecture
 
@@ -22,7 +22,7 @@ The training objective of GloVe is to learn word vectors such that their dot pro
 
 General idea: Ratios of words illustrate relationship. If P(k|w) is probability that word k appears in the context of word w, ratio of P(solid | ice) / P(solid | steam) will be large, indicating solid is related to ice more than steam. Note that the formula operates on difference between word vectors (rather than individual words)
 
-[alt text](http://url/to/img.png)
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/glove.png" width="40%">
 
 #### Certain training details
 - Use a weighting function to ensure rare co-occurrences are not weighted as often.

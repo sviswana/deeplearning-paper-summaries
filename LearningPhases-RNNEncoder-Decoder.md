@@ -13,12 +13,13 @@ Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bo
 - Proposes a novel hidden unit (with reset/update gate), that is simpler than LSTM unit.
 - Proposed model learns semantic & syntactic representations of phrases & improves BLEU scores for English-French translation.
 
-**My takeaway**: RNN Encoder-Decoder architecture is a viable approach for better scoring of candidate translations, though it appears Sequence To Sequence paper (summary HERE) is used more widely.
+**My takeaway**: RNN Encoder-Decoder architecture is a viable approach for better scoring of candidate translations, though it appears Sequence To Sequence paper (my summary [**here**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/SequenceToSequence.md)) is used more widely.
 
 ### Relevant Architecture
 - 2 model approach, where encoder encodes variable source input to vector representation, and decoder decodes representation into sequence of symbols. Decoder takes in hidden state, previous target output, and hidden state summary of input.
-[INCLUDE IMAGE] [alt text](http://url/to/img.png)
 - Novel hidden unit which is a bit simpler than LSTM unit.
+
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/rnn-encoder-decoder.png" width="40%">
 
 #### Certain training details
 - 1000 hidden units, 100 dimensional word-embedding

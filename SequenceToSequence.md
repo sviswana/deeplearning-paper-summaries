@@ -12,17 +12,18 @@ Ilya Sutskever, Oriol Vinyals, Quoc V. Le
 - A large deep LSTM with limited vocabulary > standard SMT with unlimited vocabulary.
 - Simple, straight forward approach can outperform SMT.
 
-My takeaway: LSTMs can effectively be used for machine translation, and are particularly effective when source sentences are reversed.
+**My takeaway**: LSTMs can effectively be used for machine translation, and are particularly effective when source sentences are reversed.
 
 ### Relevant Architecture
 LSTM is used to map input sequence to fixed size vector. Then another LSTM is used to map the vector to output sequence.
+
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/sequence2sequence.png" width="50%">
 
 #### Certain training details
 - Deep LSTMs perform better than shallow LSTMs (4 layers)
 - Maximize log probability of correct translation T given source sentence S.
 - Search for most likely translation with left-to-right beam search decoder.
 - No momentum used + hard constraint on gradient norm (to prevent exploding gradient)
-[alt text](http://url/to/img.png)
 
 ### Results
 - Tested on WMT'14 English to French machine translation task.
