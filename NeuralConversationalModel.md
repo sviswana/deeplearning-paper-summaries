@@ -14,7 +14,7 @@ Oriol Vinyals, Quoc Le
 **My takeaway**: Traditionally conversational modeling undergoes major feature engineering, but this paper shows seq2seq approach can be very promising.
 
 ### Relevant Architecture
-- Uses seq2seq model as I summarized from Sutskever paper (here).
+- Uses seq2seq model as I summarized from Sutskever paper [**here**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/SequenceToSequence.md).
 
 #### Certain training details
 - Tested on two different datasets: IT dataset (single layer LSTM with 1024 memory cells with SGD) & open movie subtitle dataset (two-layered LSTM with AdaGrad with 4096 memory cells)
