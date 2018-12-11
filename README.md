@@ -15,6 +15,7 @@ Summarizing some deep learning papers that I've read. Papers are selected from [
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/RNNSequences.md): "**Generating Sequences With Recurrent Neural Networks**", Graves, Alex (2013)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/GloVE.md): "**GloVe: Global Vectors for Word Representation**", J. Pennington et al. (2014)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/LearningPhases-RNNEncoder-Decoder.md): "**Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation**", Cho, Kyunghyun, et al. (2014)
+- [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/NeuralMachineTranslationJointlyAlign.md): "**Neural Machine Translation by Jointly Learning to Align and Translate**", Bahdanau, Dzmitry, KyungHyun Cho, and Yoshua Bengio (2014)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/SequenceToSequence.md): "**Sequence to sequence learning with neural networks**", Sutskever, Ilya, Oriol Vinyals, and Quoc V. Le (2014)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/EffectiveApproachAttentionBased.md): "**Effective Approaches to Attention-based Neural Machine Translation**", Luong, Minh-Thang, Hieu Pham, and Christopher D. Manning. (2015)
 
