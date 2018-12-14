@@ -8,6 +8,7 @@ Summarizing some deep learning papers that I've read. Papers are selected from [
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/ImageNetClassification.md): "**ImageNet Classification with Deep Convolutional Neural Networks**", Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. (2012)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/MaxoutNetworks.md): "**Maxout Networks**", I. Goodfellow et al. (2013)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/NetworkInNetwork.md): "**Network in Network**", M. Lin et al. (2013)
+- [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/VeryDeepConvolutionalNetworks.md): "**Very Deep Convolutional Networks for Large-Scale Image Recognition**", Simonyan, Karen, and Andrew Zisserman (2014)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/DeepResidualLearning.md): "**Deep residual learning for image recognition.**", He, Kaiming, et al. (2015)
 
 ## NLP(Natural Language Processing) / RNNs 
