@@ -19,7 +19,7 @@ Kyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bo
 - 2 model approach, where encoder encodes variable source input to vector representation, and decoder decodes representation into sequence of symbols. Decoder takes in hidden state, previous target output, and hidden state summary of input.
 - Novel hidden unit which is a bit simpler than LSTM unit.
 
-<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/rnn-encoder-decoder.png" width="40%">
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/vgg-1.png" width="50%">
 
 #### Certain training details
 - 1000 hidden units, 100 dimensional word-embedding
