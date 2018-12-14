@@ -19,8 +19,10 @@ Karen Simonyan, Andrew Zisserman
 - All hidden layers use ReLU activation function.
 - Width of conv layers starts from 64 in first layer and doubles, until reaching 512.
 
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/vgg-1.png" width="50%">
+
 #### Certain training details
-- Training mostly follows the landmark ImageNet paper (my summary Here by Krizhevsky), except for special sampling of input crops.
+- Training mostly follows the landmark ImageNet paper (my [**summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/ImageNetClassification.md)), except for special sampling of input crops.
 - Mini-batch gradient descent, with batch size of 256, and momentum to 0.9.
 - Initialization of weights is very important - can make a difference in stability.
 - Training image size: tried two approaches, fixing size, and multi-scale, where training image size is randomly sampled from certain range.
