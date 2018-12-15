@@ -16,10 +16,10 @@ Christian Szegedy, Alexander Toshev, Dumitru Erhan
 ### Relevant Architecture
 - At a high level, idea is to apply DNN-based regression towards an object mask. Then generate masks for full object as well as portions of object. Then further localize on a small set of large sub-windows.
 
-- General Algorithm:
-1) For various scales/windows of image, compute object box masks using DNN network (based off classic ImageNet paper ( my suMMSARY)).
-2) For final set of detections, search through bounding boxes and keeps ones with strong score.
-3) Further refinement via 2nd stage of DNN regression where localizer applied on windows defined in initial stage.
+*General Algorithm*:
+  1) For various scales/windows of image, compute object box masks using DNN network (based off classic ImageNet paper (my summary [**here**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/ImageNetClassification.md)).
+  2) For final set of detections, search through bounding boxes and keeps ones with strong score.
+  3) Further refinement via 2nd stage of DNN regression where localizer applied on windows defined in initial stage.
 
 #### Certain training details
 - Classifier is replaced with mask generation layer, but does need a huge amount of training data (objects of different sizes + different locations)
