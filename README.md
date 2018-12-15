@@ -22,3 +22,7 @@ Summarizing some deep learning papers that I've read. Papers are selected from [
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/NeuralConversationalModel.md): "**A neural conversational model.**", Vinyals, Oriol, and Quoc Le. (2015)
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/EffectiveApproachAttentionBased.md): "**Effective Approaches to Attention-based Neural Machine Translation**", Luong, Minh-Thang, Hieu Pham, and Christopher D. Manning. (2015)
 
+## Object Detection 
+- [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/DeepNeuralNetworksObjectDetection.md): "**Deep neural networks for object detection**", Szegedy, Christian, Alexander Toshev, and Dumitru Erhan (2013)
+
+
