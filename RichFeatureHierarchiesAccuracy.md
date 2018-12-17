@@ -1,7 +1,7 @@
 # Rich feature hierarchies for accurate object detection and semantic segmentation
 
 Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik
-(https://arxiv.org/pdf/1311.2524.pdf, 2013)
+(https://arxiv.org/pdf/1311.2524.pdf, 2014)
 
 ### TL;DR
 - Proposes a new object detection approach improving relative SOTA by 30%. R-CNN technique involves using CNNs for region proposals for localization, and technique for training when labeled data is scarce.
