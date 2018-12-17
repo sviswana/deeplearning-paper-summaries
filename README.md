@@ -24,5 +24,6 @@ Summarizing some deep learning papers that I've read. Papers are selected from [
 
 ## Object Detection 
 - [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/DeepNeuralNetworksObjectDetection.md): "**Deep neural networks for object detection**", Szegedy, Christian, Alexander Toshev, and Dumitru Erhan (2013)
+- [**Summary**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/RichFeatureHierarchiesAccuracy.md): "**Rich feature hierarchies for accurate object detection and semantic segmentation**", Girshick, Ross, et al. (2014)
 
 
