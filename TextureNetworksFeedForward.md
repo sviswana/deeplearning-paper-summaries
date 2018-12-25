@@ -16,7 +16,7 @@ Dmitry Ulyanov, Vadim Lebedev, Andrea Vedaldi, Victor Lempitsky
 ### Relevant Architecture
 - Feed-forward *generator* network that takes noise sample as input, and produces texture sample.
 - There are two networks: descriptor & generator network. Descriptor network is pre-trained for image classification. Only generator network is updated, which makes training easier.
-- Loss function is based off Gatys et al. (see my SUMMARY here)- texture loss alone is used when training generator network, and weighted combination of texture & content loss is used for generator network for stylization.
+- Loss function is based off Gatys et al. (see my summary [**here**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/TextureNetworksFeedForward.md))- texture loss alone is used when training generator network, and weighted combination of texture & content loss is used for generator network for stylization.
 
 #### Certain training details
 - Learning via SGD.
@@ -25,6 +25,7 @@ Dmitry Ulyanov, Vadim Lebedev, Andrea Vedaldi, Victor Lempitsky
 ### Results
 Most comparisons must be done in a qualitative manner. But evaluation of this technique only takes ~20 ms (while Gatys et al. takes ~10 sec).
 
-[IMAGE]
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/textureNetwork.png" width="70%">
+
 ### Future Work
 - Results sometimes don't match quality of Gatys et al. - better stylization losses could give better quality results.
