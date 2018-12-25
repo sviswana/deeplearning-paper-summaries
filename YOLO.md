@@ -15,7 +15,8 @@ Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi
 
 ### Relevant Architecture
 
-[IMAGE]
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/yolo.ong.png" width="60%">
+
 - Unified single neural network, using features from entire image to predict bounding box.
 - General process is:
   1. Divide input image into S x S grid (typically S = 7)
