@@ -15,6 +15,8 @@ Leon A. Gatys, Alexander S. Ecker, Matthias Bethge
 - Content is represented through layers in the network (higher layers in network capture high-level content in terms of objects)
 - Style is represented by correlations between different filter responses over spatial extent of feature maps.
 
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/artisti-style-arch.png" width="60%">
+
 #### Certain training details
 - VGG-network was used (with 16 conv layers + 5 pooling layers). No FC layers used.
 - To visualize image information, gradient descent is performed on white noise image to find another image matching feature responses of the original image. Then squared loss is used between the two feature representations.
@@ -22,6 +24,8 @@ Leon A. Gatys, Alexander S. Ecker, Matthias Bethge
 - **Back-prop** is used to update weights.
 
 ### Results
-[IMAGE]
+
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/artisticstyle.png" width="60%">
+
 ### Future Work
 - This work offers a path forward to an algorithmic understanding of how humans create / perceive artistic imagery.
