@@ -20,7 +20,7 @@ Kaiming He, Georgia Gkioxari, Piotr Dollár, Ross Girshick
   1. 1st stage: - RPN (region proposal)
   2. 2nd stage: - Predict class & box offset & binary mask for RoI (all in parallel)
 
-- Multi-task loss metric, based on L = L_cls + L_box + L_mask.
+- Multi-task loss metric, based on L = *L_cls* + *L_box* + *L_mask*.
 - **RoIAlign**, which is replacement for RoIPool to retain alignment. It removes quantization of RoIPool. In image (below), dashed grid represents feature map, and solid lines are RoI. RoIAlign computes value by bilinear interpolation from nearby grid points.
 
 <img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/mask-rcnn-1.png" width="20%">
