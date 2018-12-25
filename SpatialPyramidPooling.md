@@ -16,7 +16,8 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun
 ### Relevant Architecture
 
 <img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/spp-1.png" width="60%">
-- The spatial pyramid pooling layer replaces the last pooling layer (since it's the FC's that require fixed-length vectors).
+
+- The spatial pyramid pooling layer replaces the last pooling layer (since it's the FC's that require fixed-length vectors)
 - Pools features together at various scales, and generates fixed-length output, which is fed to FC layers. This avoids need for cropping/warping at the beginning.
 
 **Note:** The difference between R-CNN and SPP-net is that region-wise computation is done once the feature map of the whole image is constructed.
