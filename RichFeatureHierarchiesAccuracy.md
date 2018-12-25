@@ -1,7 +1,7 @@
 # Rich feature hierarchies for accurate object detection and semantic segmentation
 
 Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik
-(https://arxiv.org/pdf/1311.2524.pdf, 2013)
+(https://arxiv.org/pdf/1311.2524.pdf, 2014)
 
 ### TL;DR
 - Proposes a new object detection approach (R-CNN) improving relative SOTA by 30%. R-CNN technique involves using CNNs for region proposals for localization, and technique for training when labeled data is scarce.
@@ -15,14 +15,14 @@ Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik
 ### Relevant Architecture
 - General Algorithm:
 1) Uses selective search for ~2000 region proposals.
-2) Computes features for each proposal using CNN (as proposed in landmark Imagenet paper - summary here).
+2) Computes features for each proposal using CNN (as proposed in landmark Imagenet paper - summary [**here**](https://github.com/sviswana/deeplearning-paper-summaries/blob/master/ImageNetClassification.md).
 3) Classifies region using class-specific linear SVMs.
-[INCLUDE IMAGE]
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/rnn-1.png" width="50%">
 
 (In other words, at a high-level, you find RoI from image, create warped image region, and pass each one into CNN. Then apply bounding box regressors and use SVM to classify.)
 
 #### Certain training details
-- First level is supervised pre-training, where ILSVRC dataset is used with image-level annotations. (ImageNet architecture).
+- First level is supervised pre-training, where ILSVRC dataset is used with image-level annotations (ImageNet architecture).
 - Domain specific fine-tuning is done using SGD using warped region proposals from first layer. Architecture itself is similar, while learning rate is started at 0.001.
 
 ### Results
