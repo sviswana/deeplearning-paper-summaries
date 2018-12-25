@@ -4,7 +4,7 @@ Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik
 (https://arxiv.org/pdf/1311.2524.pdf, 2013)
 
 ### TL;DR
-- Proposes a new object detection approach improving relative SOTA by 30%. R-CNN technique involves using CNNs for region proposals for localization, and technique for training when labeled data is scarce.
+- Proposes a new object detection approach (R-CNN) improving relative SOTA by 30%. R-CNN technique involves using CNNs for region proposals for localization, and technique for training when labeled data is scarce.
 
 ### Main Contributions
 - Previous object detection performance had stagnated (typically used ensembles / SIFT / HOG features). Novel approach called R-CNN - involves regions with CNN features.
@@ -18,6 +18,8 @@ Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik
 2) Computes features for each proposal using CNN (as proposed in landmark Imagenet paper - summary here).
 3) Classifies region using class-specific linear SVMs.
 [INCLUDE IMAGE]
+
+(In other words, at a high-level, you find RoI from image, create warped image region, and pass each one into CNN. Then apply bounding box regressors and use SVM to classify.)
 
 #### Certain training details
 - First level is supervised pre-training, where ILSVRC dataset is used with image-level annotations. (ImageNet architecture).
