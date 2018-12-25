@@ -10,6 +10,7 @@ Leon A. Gatys, Alexander S. Ecker, Matthias Bethge
 - One of the first papers to show how NNs could be used to create artistic images of high perceptual quality
 - Representation of content & style are separable in CNNs.
 
+
 ### Relevant Architecture
 - Content is represented through layers in the network (higher layers in network capture high-level content in terms of objects)
 - Style is represented by correlations between different filter responses over spatial extent of feature maps.
