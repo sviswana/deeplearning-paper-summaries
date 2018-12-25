@@ -17,7 +17,8 @@ Ross Girshick
 
 ### Relevant Architecture
 
-[IMAGE]
+<img src="https://github.com/sviswana/deeplearning-paper-summaries/blob/master/paper-imgs/fast-rcnn.png" width="60%">
+
 - Fast R-CNN takes entire image as input, and processes the whole image to produce conv feature map. Proposals are identified from here, and warped into fixed-length via RoI pooling layer. Then two sibling output layers: softmax propoability estimate over classes + bbox regressor with 4 returned values.
 - RoI pooling layer converts into feature map of size 7x7, for example.
 - Starts with pre-trainined ImageNet network, replacing last max pooling layer with RoI pooling layer & softmax layer with two sibling layers described in previous section.
